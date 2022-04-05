@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Tarefa 5</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <img src="IMG/Img.jpeg">
+            <h1>Menu - Faça a sua escolha</h1>
+        </div>
+
+        <div class="card">
+            <h1>Entradas</h1>
+            <p>Variedade e qualidade todos os dias da semana.</p>
+
+            <div class="content">
+                <img src="IMG/Img1.jpeg">
+                <h1 id="nome-Prato1">Sashimi</h1>
+                <p id="precoPrato1">R$45,00</p>
+
+                <input type="button" id="plus" value='-' onclick="process(-1, 1)" />
+                <input id="quant1" name="quant1" class="text" size="1" type="text" value="0" maxlength="5" />
+                <input type="button" id="minus" value='+' onclick="process(1, 1)">
+            </div>
+
+            <div class="content">
+                <img src="IMG/Img2.jpeg">
+                <h1 id="nome-Prato2">Tempura</h1>
+                <p>R$20,00</p>
+
+                <input type="button" id="plus" value='-' onclick="process(-1, 2)" />
+                <input id="quant2" name="quant2" class="text" size="1" type="text" value="0" maxlength="5" />
+                <input type="button" id="minus" value='+' onclick="process(1, 2)">
+            </div>
+
+            <div class="content">
+                <img src="IMG/Img3.jpeg">
+                <h1 id="nome-Prato3">Missoshiro</h1>
+                <p>R$25,00</p>
+
+                <input type="button" id="plus" value='-' onclick="process(-1, 3)" />
+                <input id="quant3" name="quant3" class="text" size="1" type="text" value="0" maxlength="5" />
+                <input type="button" id="minus" value='+' onclick="process(1, 3)">
+            </div>
+        </div>
+        
+        <div class="card">
+            <h1>Pratos Quentes</h1>
+            <p>Temos uma grande variedade de pratos e novidades constantes no cardápio.</p>
+
+            <div class="content">
+                <img src="IMG/Img4.jpeg">
+                <h1 id="nome-Prato4">Guioza</h1>
+                <p>R$15,00</p>
+       
+                <input type="button" id="plus" value='-' onclick="process(-1, 4)" />
+                <input id="quant4" name="quant4" class="text" size="1" type="text" value="0" maxlength="5" />
+                <input type="button" id="minus" value='+' onclick="process(1, 4)">
+            </div>
+
+            <div class="content">
+                <img src="IMG/Img5.jpeg">
+                <h1 id="nome-Prato5">Temaki</h1>
+                <p>R$18,00</p>
+
+                <input type="button" id="plus" value='-' onclick="process(-1, 5)" />
+                <input id="quant5" name="quant5" class="text" size="1" type="text" value="0" maxlength="5" />
+                <input type="button" id="minus" value='+' onclick="process(1, 5)">
+            </div>
+
+            <div class="content">
+                <img src="IMG/Img6.jpeg">
+                <h1 id="nome-Prato6">Harumaki </h1>
+                <p>R$30,00</p>
+
+                <input type="button" id="plus" value='-' onclick="process(-1, 6)" />
+                <input id="quant6" name="quant6" class="text" size="1" type="text" value="0" maxlength="5" />
+                <input type="button" id="minus" value='+' onclick="process(1,6)">
+            </div>
+        </div>
+
+        <div class="dados-pessoais">
+            <h1>Dados Pessoais</h1>
+
+            <form class="form">
+                <input class="field" id="name" name="name" placeholder="Digite o seu nome">
+                <input class="field" id="phone" name="phone" placeholder="Digite o seu telefone">
+                <input class="field" id="email" name="email" placeholder="Digite o seu email">
+            </form>
+        </div>
+
+        <input type="submit" value="Calcular" class="enviar" onclick="enviarDados()">
+
+        <div class="pedido" id="pedido">
+        <p id="valorDigitado"></p>
+        <p id="valorDigitado1"></p>
+        <p id="valorDigitado2"></p>
+        <p id="pedido1"></p>
+        <p id="pedido2"></p>
+        <p id="pedido3"></p>
+        <p id="pedido4"></p>
+        <p id="pedido5"></p>
+        <p id="pedido6"></p>
+        <p id="precoFinal"></p>
+        </div>    
+    </div>
+</body>
+
+<script src="script.js" defer></script>
+
+</html>
